@@ -14,7 +14,7 @@ dotenv.config({
 //middlewares
 app.use(
   cors({
-    origin: "https://commune-ai-indol.vercel.app/",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",

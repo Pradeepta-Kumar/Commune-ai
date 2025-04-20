@@ -90,8 +90,9 @@ const Chat = () => {
   }, [user]);
 
   return (
-    <div className="text-white bg-black w-full h-[100%] relative">
-      <div className="flex-grow p-4 overflow-y-auto w-[75%] mx-auto py-24">
+    <div className="text-white bg-black w-full h-[100vh] relative">
+      <div className="flex-grow p-4 w-[75%] h-[100vh] mx-auto py-12 overflow-y-auto scrollbar-hide"
+     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
         {loading && <p className="text-center">Loading...</p>}
         {query?.map((q, index) => (
           <div key={index} className="mb-4">

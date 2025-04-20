@@ -58,7 +58,7 @@ const Navbar = () => {
   console.log("User name = ", user?.name);
 
   return (
-    <nav className="bg-black text-white w-full px-4 py-3 top-0 fixed z-50">
+    <nav className="bg-black text-white w-full px-4 py-3 top-0 sticky z-50">
       <div className="flex justify-between items-center">
         <div className="flex justify-center items-center gap-2 cursor-pointer" onClick={() => naviagte("/")}>
           <Smile size={32} />
